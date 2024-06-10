@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+}
+
+label {
+    display: none;
+}
+label:hover {
+    /* margin-right: 2em; */
+    border: 0px solid rosybrown;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+.checkbtn {
+    font-size: 30px; 
+    color: black;
+    cursor: pointer;
+    display: flex;
+ }
+ 
+ #check {
+     display: flex;
+ }
+
+ /* nav ul {
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    gap: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover {
+    background: burlywood;
+    transition: .5s;
+} */
+
+
+
+nav ul {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 1em;
+    position: fixed;
+    width: 50%;
+    background: #000000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 2;
+ }
+ nav ul li {
+    display: block;
+    line-height: 30px;
+ }
+ nav ul li img {
+    width: 5em;
+    height: 5em;
+    background-color: #000000;
+    visibility: visible;
+ }
+ nav ul li a {
+    font-size: 20px;
+    color: black;
+    /* font-size: 17px; */
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase
+ }
+ a:hover,a.active {
+    background: none;
+    color: #ff8906;
+ }
+ #check:checked ~ ul {
+    left: 0;
+ }
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    /* padding: 10em; */
+}
+
+.head {
+    width: 50vw;
+}
+
+.middle p , .foot p {
+   /* padding: 0.2em; */
+  
+   width: 50vw;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.foot img {
+    width: 50vw;
+    height: 25em;
+    /* object-fit: cover; */
+}
