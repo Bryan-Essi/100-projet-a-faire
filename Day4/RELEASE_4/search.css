@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+}
+
+section {
+    background-color: #21d4fd;
+    background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 5px;
+    height: 55px;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .search-box input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    width: 0;
+    transition: 0.8s;
+  }
+  
+  .search-box:hover input {
+    width: 150px;
+  }
+  .search-box button {
+    padding: 10px;
+    border: 0;
+    background-color: #21d4fd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  
+  .search-box button img {
+    width: fit-content;
+    width: 20px;
+    height: 20px;
+  }
