@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+}
+.ps {
+    width: 50vw;
+    height: 100vh;
+}
+.ps:hover {
+    width: 75vw;
+    transition: .8s;
+}
+.ps img {
+    width: 50vw;
+    height: 100vh;
+    /* object-fit: cover; */
+}
+.ps img:hover {
+    width: 75vw;
+    transition: .8s;
+}
+.xbox {
+    overflow: hidden;
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    /* position: sticky; */
+}
+.xbox:hover {
+    width: 75vw; 
+    transition: .8s;
+    transform: translateX(-20%);
+}
+.xbox img {
+    width: 50vw;
+    height: 100vh;
+    transition: transform 0.8s ease;
+    /* position: sticky; */
+}
+.xbox img:hover {
+    width: 75vw;
+    transition: .8s;
+    transform: translateX(-20%);
+}
